@@ -1,0 +1,370 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <script src="https://kit.fontawesome.com/56cbc03ca2.js"></script>
+    <style type="text/css">
+    /* Caption text */
+
+    body{
+    margin:0;
+    font-family:'work-sans',sans-serif;
+    font-weight:300;
+    background:lightblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+  }
+}
+/*fibo heading*/
+h1.Fibohead{
+color:maroon;
+}
+
+
+
+.containerR {
+    width:100%;
+    margin:0 auto;
+
+
+}
+footer{
+  text-align: center;
+  background-color:white;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0px
+}
+.social-menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.social-menu ul li{
+list-style: none;
+margin: 0 15px;
+}
+.social-menu ul li .fa{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .6s;
+  color: #000;
+}
+.social-menu ul li .fa:hover {
+  background-color: #fff;
+
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e44;
+}
+header {
+background:white;
+
+}
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+/*logo code*/
+}
+.logo{
+    float: left;
+    /*navbar code*/
+}
+nav{
+    float:right;
+
+}
+nav ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+
+}
+nav li{
+     display: inline-block;
+     margin-left:70px;
+     padding-top:25px;
+     position: relative;
+
+}
+nav a{
+    color:maroon;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size: 14px;
+
+}
+nav a:hover{
+    color:gold;
+}
+nav a::before{
+    content: "";
+    display:block;
+    height:5px;
+    width: 100%;
+    background-color:rgb(0,0,255) ;
+    position: absolute;
+    top:0;
+    width:0%;
+    transition:all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width:100%;
+}
+/*fibo heading*/
+h1.Fibohead{
+color:maroon;
+}
+
+
+}
+  .form2{width: 800px;
+  margin: 0 auto;
+
+border-style: solid;
+  border-width: medium;
+border-radius: 8px;
+border:0px solid maroon;
+}
+  .form1
+  {width: 800px;
+  margin: 0 auto;
+border-style: solid;
+  border-width: medium;
+border-radius: 8px;
+border:0px solid maroon
+}
+
+input {
+  width: 15%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color: #3C99dc;
+  color: white;
+  width:8%;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e44;
+}
+/* Style the container for inputs */
+
+    </style>
+
+    <title>Student Form</title>
+
+
+<script type ="text/javascript ">
+function isNumber(evt) {
+  evt = (evt) ? evt : window.event;
+  var charCode = (evt.which) ? evt.which : evt.keyCode;
+  if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+    alert("Please enter only Numbers.");
+    return false;
+  }
+
+  return true;
+}
+
+function Validate() {
+  var phoneNo = document.getElementById('txtPhoneNo');
+
+  if (phoneNo.value == "" || phoneNo.value == null) {
+    alert("Please enter your Mobile No.");
+    return false;
+  }
+  if (phoneNo.value.length < 10 || phoneNo.value.length > 10) {
+    alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+    return false;
+  }
+
+  alert("Success ");
+  return true;
+}
+function Validate() {
+  var idNo = document.getElementById('txtIdNumber');
+
+  if (idNo.value == "" || idNo.value == null) {
+    alert("Please enter your Mobile No.");
+    return false;
+  }
+  if (idNo.value.length < 13 || idNo.value.length > 13) {
+    alert("Identity No. is not valid, Please Enter 13 Digit Identity No.");
+    return false;
+  }
+
+  alert("Success ");
+  return true;
+}
+
+</script>
+</head>
+  <body>
+    <header>
+      <title style="color:blue">Wesley Methodist Practising School</title>
+    <div class="container">
+      <img src="images/logo.png"  alt="logo" class="logo">
+
+    <nav>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+    <li><a href="login.html">Admin Log in</a></li>
+
+
+
+    </ul>
+    </nav>
+    </div>
+</header>
+<center><h1 style="align-items: center;" class="Fibohead">Wesley Methodist Practising Primary School Bills</h1></center>
+<br>
+  <h2><center>Learner Information</center></h2>
+  <form action="finance.html" onsubmit="return Validate()" method="post">
+<div class="wrapper">
+  <div class="form2">
+  <h3>Personal Details</h3>
+    <div class="input-fields">
+      <label for="Name"><b>Name:</b></label>
+      <input type="text" name="name" placeholder="name" required>
+        <label for="surname"><b>Surname:</b></label>
+        <input type="text" name="surname"placeholder="surname"required >
+      <!--  <input type="text" name="input"placeholder="Grade">-->
+      <label for="ID Number"><b>ID Number:</b></label>
+        <input id ="txtIdNumber"type="text" name="id no" placeholder="0123456789362"required >
+
+  </div>
+  <br>
+    <div class="input-fields">
+
+
+		     <br>
+      <div class="input-fields">
+          <label for="E-mail"><b>E-mail</b></label>
+  <input type="text" name="input" placeholder="E-mail address"required>
+  <label for="Phone Number"><b>Phone Number:</b></label>
+          <input id="txtPhoneNo" type="text" placeholder="0123456789" onkeypress="return isNumber(event)" />
+
+    <form action= "/action_page.php">
+    <label for="Date"> Date:</label>
+    <input type="date" id="month" name="year">
+    <br>
+
+<br>
+       <label for="Grade"><b>Grade</b></label>
+      <select>
+    <option value="Grade">select grade </option>
+    <option value="R">Grade R</option>
+    <option value="1">Grade 1</option>
+    <option value="2">Grade 2</option>
+    <option value="3">Grade 3</option>
+    <option value="4">Grade 4</option>
+    <option value="5">Grade 5</option>
+    <option value="6">Grade 6</option>
+    <option value="7">Grade 7</option>
+  </select>
+      <!--  <input type="text" name="input"placeholder="Gender">-->
+      <label for="Gender"><b>Gender</b></label>
+      <select>
+    <option value="Gender">select gender</option>
+    <option value="R">Male</option>
+    <option value="1">Female</option>
+    <option value="2">Other</option>
+  </select><label for="Upload image"><b>Upload image:</b></label>
+  <input type="file"  onchange ="showFile(this)">
+<input type="submit" value="Submit">
+    </div>
+
+
+  </form>
+    </div>
+<footer>
+  <div class="social-menu">
+  <ul>
+<li><a href="https://web.facebook.com/groups/40661223247/"><i class="fab fa-facebook"></i></a></li>
+<li><a href=""><i class="fab fa-instagram"></i></a></li>
+<li><a href=""><i class="fab fa-twitter"></i></a></li>
+</ul>
+</footer>
+</div>
+<script>
+let user = {
+name: 'John',
+surname: 'Smith'
+};
+
+let response = await fetch('/article/fetch/post/user',{
+  metod: 'POST',
+  headers: {
+    'Content-Type': 'application/json;charset=utf-8'
+  },
+  body: JSON.stringify(user)
+});
+let result = await respone.json();
+alert(result.message);
+
+function showFile(input){
+  let file =input.files[0];
+  alert("File name: ${file.name}");
+  alert("Last modified: ${file.lastModified}");
+}
+</script>
+  </body>
+</html>
